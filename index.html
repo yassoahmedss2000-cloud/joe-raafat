@@ -3,37 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <title>وصفات طبخ</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #fff7f0;
             margin: 0;
-            padding: 0;
+            background-color: #fff5ee;
         }
+
         header {
-            background-color: #ff8c42;
+            background-color: #ff7a18;
             color: white;
-            padding: 20px;
             text-align: center;
+            padding: 25px;
         }
+
         .container {
-            padding: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+            flex-wrap: wrap;
         }
+
         .recipe {
             background-color: white;
-            border-radius: 10px;
+            width: 250px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            text-align: center;
             padding: 15px;
-            margin-bottom: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
+
+        .recipe img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
         .recipe h2 {
-            color: #ff8c42;
+            color: #ff7a18;
         }
-        ul {
-            list-style-type: square;
+
+        .recipe button {
+            background-color: #ff7a18;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .recipe button:hover {
+            background-color: #e56700;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
         }
     </style>
 </head>
+
 <body>
 
 <header>
+    <h1>🍽️ وصفات طبخ</h1>
+    <p>أشهى الوصفات السهلة</p>
+</header>
+
+<div class="container">
+
+    <div class="recipe">
+        <img src="pasta.jpg" alt="مكرونة بشاميل">
+        <h2>مكرونة بشاميل</h2>
+        <p>وصفة لذيذة وسهلة.</p>
+        <button>عرض الوصفة</button>
+    </div>
+
+    <div class="recipe">
+        <img src="cake.jpg" alt="كيك شوكولاتة">
+        <h2>كيك شوكولاتة</h2>
+        <p>كيك هش وطعمه تحفة.</p>
+        <button>عرض الوصفة</button>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2025 جميع الحقوق محفوظة</p>
+</footer>
+
+</body>
+</html>
